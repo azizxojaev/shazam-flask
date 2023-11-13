@@ -1,0 +1,90 @@
+.body {
+  width: 100%;
+  height: 100vh;
+  background: #000d15;
+}
+
+.shazam {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  transition: gap 0.3s ease-in-out;
+}
+
+@keyframes size {
+  from {
+    width: 25%;
+  }
+  to {
+    width: 26%;
+  }
+}
+
+.shazam-content {
+  width: 25%;
+  padding: 75px;
+  border-radius: 100%;
+  cursor: pointer;
+  background: #4d545a;
+  animation-name: size;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.shazam img {
+  width: 100%;
+}
+
+.song {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+}
+
+.song-body {
+  background-color: #000d15;
+}
+
+.song img {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+.song__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.download_btn {
+  width: 75%;
+  background-color: orange;
+  padding: 20px 35px;
+  text-decoration: none !important;
+  border-radius: 20px;
+}
+
+.back {
+  width: 5%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
